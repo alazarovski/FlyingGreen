@@ -1,0 +1,29 @@
+# NetZero - Select Area of interest
+
+## Default 
+
+1.  Level value is Network
+
+2.  Area value is ECAC
+
+3.  State value is Belgium
+
+4.  FAB value is FABEC
+
+5.  ANSP value is Skeyes
+
+6.  Airport value is Brussels
+
+## Output
+
+The Level and Area selection update the Emissions, Fuel burn, Cumulative Emissions and What-if Graphs.
+
+## Data 
+
+UN list of countries. The designations employed do not imply the expression of any opinion whatsoever on the part of EUROCONTROL concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Generally, Airports with, on average, more than 10 movements per day are included.
+
+## Definition
+
+Network: group of states State: nation or territory considered as an organized political community under one government FAB (Functional Airspace Block): an airspace block based on operational requirements and established regardless of State boundaries.
+
+![](/www/netzero_level_of_interest.png){fig-align="center"}
