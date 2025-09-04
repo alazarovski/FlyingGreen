@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>FlyingGreen User Manual - 5&nbsp; NetZero</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../fuelingdecarb/index.html" rel="next">
+<link href="../common_features/initial_login.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">NetZero</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">FlyingGreen User Manual</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">FLYINGGREEN</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Purpose</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../fg_in_brief.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">FlyingGreen in brief</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../fg_functionalities.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">FlyingGreen functionalities</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../common_features/initial_login.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Login</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../netzero/index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">NetZero</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../fuelingdecarb/index.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fueling Decarb</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#functionalities" id="toc-functionalities" class="nav-link active" data-scroll-target="#functionalities"><span class="toc-section-number">5.1</span>  Functionalities</a></li>
+  <li><a href="#save-retrieve-delete-project-data" id="toc-save-retrieve-delete-project-data" class="nav-link" data-scroll-target="#save-retrieve-delete-project-data"><span class="toc-section-number">5.2</span>  Save, Retrieve, Delete Project data</a></li>
+  <li><a href="#select-area-of-interest" id="toc-select-area-of-interest" class="nav-link" data-scroll-target="#select-area-of-interest"><span class="toc-section-number">5.3</span>  Select Area of interest</a></li>
+  <li><a href="#view-the-emissions-totals-average-and-reference" id="toc-view-the-emissions-totals-average-and-reference" class="nav-link" data-scroll-target="#view-the-emissions-totals-average-and-reference"><span class="toc-section-number">5.4</span>  View the Emissions (totals, average and reference)</a></li>
+  <li><a href="#view-the-fuel-burn-number-of-flights" id="toc-view-the-fuel-burn-number-of-flights" class="nav-link" data-scroll-target="#view-the-fuel-burn-number-of-flights"><span class="toc-section-number">5.5</span>  View the Fuel Burn &amp; Number of Flights</a></li>
+  <li><a href="#view-the-cumulative-emissions" id="toc-view-the-cumulative-emissions" class="nav-link" data-scroll-target="#view-the-cumulative-emissions"><span class="toc-section-number">5.6</span>  View the cumulative emissions</a></li>
+  <li><a href="#view-the-what-if-results" id="toc-view-the-what-if-results" class="nav-link" data-scroll-target="#view-the-what-if-results"><span class="toc-section-number">5.7</span>  View the what-if results</a></li>
+  <li><a href="#view-the-environmental-management-status" id="toc-view-the-environmental-management-status" class="nav-link" data-scroll-target="#view-the-environmental-management-status"><span class="toc-section-number">5.8</span>  View the Environmental Management status</a></li>
+  <li><a href="#view-the-environmental-costs" id="toc-view-the-environmental-costs" class="nav-link" data-scroll-target="#view-the-environmental-costs"><span class="toc-section-number">5.9</span>  View the Environmental Costs</a></li>
+  <li><a href="#select-the-flight-criteria-filters" id="toc-select-the-flight-criteria-filters" class="nav-link" data-scroll-target="#select-the-flight-criteria-filters"><span class="toc-section-number">5.10</span>  Select the Flight criteria Filters</a></li>
+  <li><a href="#select-the-aviation-outlook-scenario" id="toc-select-the-aviation-outlook-scenario" class="nav-link" data-scroll-target="#select-the-aviation-outlook-scenario"><span class="toc-section-number">5.11</span>  Select the Aviation Outlook Scenario</a></li>
+  <li><a href="#customise-the-saf-blend" id="toc-customise-the-saf-blend" class="nav-link" data-scroll-target="#customise-the-saf-blend"><span class="toc-section-number">5.12</span>  Customise the SAF Blend</a></li>
+  <li><a href="#customise-the-fleet-air-traffic-management-and-economic-prices" id="toc-customise-the-fleet-air-traffic-management-and-economic-prices" class="nav-link" data-scroll-target="#customise-the-fleet-air-traffic-management-and-economic-prices"><span class="toc-section-number">5.13</span>  Customise the Fleet, Air Traffic Management and Economic Prices</a></li>
+  <li><a href="#see-the-impact-of-operational-improvements" id="toc-see-the-impact-of-operational-improvements" class="nav-link" data-scroll-target="#see-the-impact-of-operational-improvements"><span class="toc-section-number">5.14</span>  See the impact of operational improvements</a></li>
+  <li><a href="#netzero-journey" id="toc-netzero-journey" class="nav-link" data-scroll-target="#netzero-journey"><span class="toc-section-number">5.15</span>  NetZero journey</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">NetZero</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="functionalities" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="functionalities"><span class="header-section-number">5.1</span> Functionalities</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/netzero_navigation.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Based on EUROCONTROL data and traffic forecasts, get an estimate of future trip fuel burn and emissions towards 2050 in different operational views and with traffic filtering options. Explore what-if scenarios to inform sustainable strategic decisions. Leverage on what-if scenario tools, exploring how Sustainable Aviation Fuel (SAF) volumes, technological and operational improvements can impact emission reduction potential. See an indication of additional environmental costs from SAF and market-based measures.</p>
+<p><strong>Project Data</strong></p>
+<ol type="1">
+<li><p>Save/Retrieve/Delete Project</p></li>
+<li><p><strong>Emissions estimate</strong><br>
+</p>
+<ol start="2" type="1">
+<li>Select the Area and Level of interest<br>
+</li>
+<li>View the Emissions (totals, average and reference)<br>
+</li>
+<li>View the Fuel Burn and Flights number<br>
+</li>
+<li>View the Cumulative Emissions<br>
+</li>
+<li>View the KPIs or results per category<br>
+</li>
+<li>View the Environmental Costs<br>
+</li>
+<li>Select the Flight criteria Filters<br>
+</li>
+<li>Select the Aviation Outlook Scenario</li>
+</ol></li>
+<li><p><strong>What-if estimates</strong><br>
+</p>
+<ol start="10" type="1">
+<li>Customise the SAF Blend<br>
+</li>
+<li>Customise the Fleet, Air Traffic Management and Economic Prices</li>
+</ol></li>
+</ol>
+</section>
+<section id="save-retrieve-delete-project-data" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="save-retrieve-delete-project-data"><span class="header-section-number">5.2</span> Save, Retrieve, Delete Project data</h2>
+<p>Note: You need to log in to enable project data management.</p>
+<ol type="1">
+<li>Display the projects list
+<ol type="1">
+<li>Open the Project(s) dropdown.</li>
+<li>The list of available projects appears (e.g., MyFirstProject, MySecondProject, New Project).</li>
+</ol></li>
+<li>Create a new project and save data
+<ol type="1">
+<li>In the Project(s) dropdown, choose New Project.</li>
+<li>In the New Project field, enter the project name (e.g., My New Project Name).</li>
+<li>Review the Net Zero information shown on the page.</li>
+<li>Click Save to create the project and store the displayed Net Zero information.</li>
+</ol></li>
+<li>Update data in the current project
+<ol type="1">
+<li>Ensure the desired project is selected in Project(s) (e.g., MyFirstProject).</li>
+<li>Make your changes on the page.</li>
+<li>Click Save to update the current project with the new information.</li>
+</ol></li>
+<li>Retrieve project data
+<ol type="1">
+<li>Open the Project(s) dropdown.</li>
+<li>Select the project you want to load (e.g., MyFirstProject, MySecondProject, or My New Project Name).</li>
+<li>The stored data for that project will be retrieved and displayed.</li>
+</ol></li>
+<li>Delete a project
+<ol type="1">
+<li>Open the Project(s) dropdown and locate the project to remove.</li>
+<li>Click the delete (trash/bin) icon next to that project.</li>
+<li>In the confirmation dialog, click Confirm to permanently delete the project (or Cancel to keep it).</li>
+</ol></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/netzero_session_saving.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="select-area-of-interest" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="select-area-of-interest"><span class="header-section-number">5.3</span> Select Area of interest</h2>
+<p>You can analyze results at different levels. First pick a Level, then pick the corresponding Area.</p>
+<ol type="1">
+<li>Select the Level
+<ol type="1">
+<li>Open the Level dropdown. Choose one of:</li>
+<li>Network</li>
+<li>State</li>
+<li>FAB</li>
+<li>Airport</li>
+</ol></li>
+</ol>
+<p>(After you choose a level, the Area dropdown will adapt to that level.)</p>
+<ol start="2" type="1">
+<li>Select the Area / State / FAB / ANSP / Airport
+<ol start="2" type="1">
+<li>Open the Area dropdown.</li>
+<li>Pick the item that matches your chosen level:
+<ol type="1">
+<li>Network → choose a region (e.g., ECAC, EUROCONTROL, EU27+EFTA, EEA, RP3, EU27).</li>
+<li>State → choose a country (e.g., Belgium).</li>
+<li>FAB → choose a Functional Airspace Block (e.g., FABEC).</li>
+<li>Airport → choose an airport (e.g., Brussels).</li>
+</ol></li>
+<li>The map panel updates to your selection.</li>
+</ol></li>
+</ol>
+<p>What to do next</p>
+<ul>
+<li><p>Click Area focus to view metrics for the selected area (you’ll see panels such as Fuel burn and others update accordingly).</p></li>
+<li><p>Or click Full trajectory if you want trajectory-based views (when available).</p></li>
+</ul>
+<p>Notes &amp; tips</p>
+<ul>
+<li><p>“Please select your area of interest to determine the filters”, filters become available after you pick a Level + Area.</p></li>
+<li><p>For Airport level, select a source to display airport emissions (e.g., LTO, TMA) when prompted.</p></li>
+</ul>
+<p>Default values</p>
+<ol type="1">
+<li><p>Level value is Network</p></li>
+<li><p>Area value is ECAC</p></li>
+<li><p>State value is Belgium</p></li>
+<li><p>FAB value is FABEC</p></li>
+<li><p>ANSP value is Skeyes</p></li>
+<li><p>Airport value is Brussels</p></li>
+</ol>
+<p><img src="images/clipboard-1061742285.png" class="img-fluid"></p>
+<p>Output</p>
+<p>The Level and Area selection update the Emissions, Fuel burn, Cumulative Emissions and What-if Graphs.</p>
+<p>Data</p>
+<p>UN list of countries. The designations employed do not imply the expression of any opinion whatsoever on the part of EUROCONTROL concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Generally, Airports with, on average, more than 10 movements per<img src="images/clipboard-1061742285.png" class="img-fluid"> day are included.</p>
+<p>Definition</p>
+<p>Network: group of states State: nation or territory considered as an organized political community under one government FAB (Functional Airspace Block): an airspace block based on operational requirements and established regardless of State boundaries.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/netzero_level_of_interest.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="view-the-emissions-totals-average-and-reference" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="view-the-emissions-totals-average-and-reference"><span class="header-section-number">5.4</span> View the Emissions (totals, average and reference)</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/select_emissions_mode.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<p>Default</p>
+<ul>
+<li><p>values CO2 exhaust, CO2 net, SAF, Fleet Renewal, Fleet Revolution, Operation Improvements, NOx, SOx</p></li>
+<li><p>Emissions View Total</p></li>
+</ul>
+<p>Output</p>
+<p>The Emissions results vary depending on the Zone selected, the Filters and the What if values. The total emissions of one year, and the reduction potential of in-sector improvements are visible at the top of the graph.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/emissions_graph.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Data</p>
+<p>Total value presents absolute total values of emissions Average values present values per flight Relative values present the yearly relative change compared to the reference year (currently 2024)</p>
+<p>Definition</p>
+<p>Total value presents absolute total values of emissions</p>
+<p>Average values present values per flight</p>
+<p>Relative values present the yearly relative change compared to the reference year (currently 2024)</p>
+</section>
+<section id="view-the-fuel-burn-number-of-flights" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="view-the-fuel-burn-number-of-flights"><span class="header-section-number">5.5</span> View the Fuel Burn &amp; Number of Flights</h2>
+<p>Default</p>
+<p>Default values&nbsp;Fossil, SAF, e-H2&nbsp;and Number of flights&nbsp;</p>
+<p>Output</p>
+<p>The Fuel Burn results vary depending on the Zone selected, the Filtersand the What if simulation. The Fuel Burn of one year is visible atthe&nbsp;top of the graph. The graph shows total fuel burn and averagefuel burn per flight. The H2&nbsp;and electricity energy is based on thepercentage of fleet revolution chosen.​</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/fuel_burn_no_flights_graph.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Data</p>
+<p>Fuel burn historical values are&nbsp;calculated for each flight using&nbsp;theEUROCONTROL&nbsp;Advanced&nbsp;Emission&nbsp;Model (AEM) based on latestaircraft/engine fuel burn and emission models with BADA3.16.Estimated Fuel burn values towards 2050 are based on actualtrajectories of reference year (usually the last full year) and trafficgrowth rates as published by STATFOR.​</p>
+</section>
+<section id="view-the-cumulative-emissions" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="view-the-cumulative-emissions"><span class="header-section-number">5.6</span> View the cumulative emissions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/cum_emissions.png" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<p>Default</p>
+<p>Default&nbsp;values&nbsp;CO2&nbsp;exhaust and CO2&nbsp;net</p>
+<p>Output</p>
+<p>The Cumulative Emissions results vary depending on the Zoneselected, the Filters and the What if simulation. The CumulativeEmissions of one year is visible by travelling on top of the graph.</p>
+<p>Data</p>
+<p>The yearly results from the main graph are added to indicate thecumulative emission results for CO2&nbsp;(as CO2&nbsp;remains in theatmosphere for many decades).​</p>
+</section>
+<section id="view-the-what-if-results" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="view-the-what-if-results"><span class="header-section-number">5.7</span> View the what-if results</h2>
+<p></p>
+</section>
+<section id="view-the-environmental-management-status" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="view-the-environmental-management-status"><span class="header-section-number">5.8</span> View the Environmental Management status</h2>
+<p><img src="..\www/env_management_status.png" class="img-fluid"></p>
+<p>Default</p>
+<p>In the ANSP and Airport views, instead of the cost graphs an overviewis presented on the EMS status of ANSP and airports​</p>
+<p>Output</p>
+<p>Indication of the Environmental Systems that are applied at the ANSPand different national Airports.</p>
+<p>Data</p>
+<p><strong>ANSP</strong>​</p>
+<p>Several Environmental Systems may be applied at ANSP level, such as EMAS,GreenATM, ISO 14000 family, etc.​</p>
+<p>The CANSO GreenATM programme is a voluntary environmental accreditationdesigned for ANSPs to assess and enhance their environmental performance. Itoffers a structured framework with five maturity levels, evaluating areas such asgovernance, operational efficiency, infrastructure, and stakeholder engagement.​</p>
+<p>Participation in the GreenATM programme is entirely voluntary for ANSPs. Itserves as an independent, industry-endorsed accreditation of theirenvironmental efforts.​</p>
+</section>
+<section id="view-the-environmental-costs" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="view-the-environmental-costs"><span class="header-section-number">5.9</span> View the Environmental Costs</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\www/view_env_costs.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Default&nbsp;</p>
+<p>Default&nbsp;values&nbsp;EU ETS and Total view</p>
+<p>Output</p>
+<p>The Environmental costs vary depending on the Zone selected andthe What if simulation. The Environmental cost are visible for 3 years:</p>
+<p>2030, 2040 and 2050.​</p>
+<p>Data</p>
+<p>Data to calculate additional environmental costs are synchronized withassumptions from Eurocontrol Aviation Outlook 2050 (see below).​</p>
+<p>EU ETS cost are assumed to offset the total remaining net emissions,both taking into consideration LCA values (option EU ETS), and nottaking into consideration SAF lifecycle values (the option with SAFexcluded). ​</p>
+<p>Simplified CORSIA costs only appear if emission values for eligibleflights are higher than 85% of 2019 emissions and then takingCORSIA sectoral growth factors into consideration (linear progressionfrom zero towards SGF 2,6 in 2050). Only sectoral offsetmethodologies are included to avoid too high calculation complexities.​</p>
+<p><img src="images/clipboard-2275571278.png" class="img-fluid"></p>
+</section>
+<section id="select-the-flight-criteria-filters" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="select-the-flight-criteria-filters"><span class="header-section-number">5.10</span> Select the Flight criteria Filters</h2>
+</section>
+<section id="select-the-aviation-outlook-scenario" class="level2" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="select-the-aviation-outlook-scenario"><span class="header-section-number">5.11</span> Select the Aviation Outlook Scenario</h2>
+</section>
+<section id="customise-the-saf-blend" class="level2" data-number="5.12">
+<h2 data-number="5.12" class="anchored" data-anchor-id="customise-the-saf-blend"><span class="header-section-number">5.12</span> Customise the SAF Blend</h2>
+</section>
+<section id="customise-the-fleet-air-traffic-management-and-economic-prices" class="level2" data-number="5.13">
+<h2 data-number="5.13" class="anchored" data-anchor-id="customise-the-fleet-air-traffic-management-and-economic-prices"><span class="header-section-number">5.13</span> Customise the Fleet, Air Traffic Management and Economic Prices</h2>
+</section>
+<section id="see-the-impact-of-operational-improvements" class="level2" data-number="5.14">
+<h2 data-number="5.14" class="anchored" data-anchor-id="see-the-impact-of-operational-improvements"><span class="header-section-number">5.14</span> See the impact of operational improvements</h2>
+</section>
+<section id="netzero-journey" class="level2" data-number="5.15">
+<h2 data-number="5.15" class="anchored" data-anchor-id="netzero-journey"><span class="header-section-number">5.15</span> NetZero journey</h2>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../common_features/initial_login.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Login</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../fuelingdecarb/index.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fueling Decarb</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
