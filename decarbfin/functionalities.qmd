@@ -7,3 +7,21 @@
 3. **Search My Funds** — Filter My Funds and Calls\
 4. **Funds in detail** — View the Funds, the Programmes and the Calls’ details\
 5. **Projects Overview** — View the Projects overview
+
+## Example: Embedded YouTube Video
+
+Watch directly here:
+
+::: {.content-visible when-format="html"}
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/_f3latmOhew?start=4"
+  title="Quarto introduction"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+:::
+
+::: {.content-visible when-format="pdf"}
+👉 [Watch on YouTube](https://www.youtube.com/watch?v=_f3latmOhew&t=4s)
+:::

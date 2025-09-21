@@ -28,7 +28,5 @@ format:
     number-depth: 2
     toc: true
     toc-depth: 2
-  pdf:
-    documentclass: scrreprt
 
 editor: visual
