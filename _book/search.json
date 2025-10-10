@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "FlyingGreen User Manual",
     "section": "",
-    "text": "FLYINGGREEN\nYour journey manual.\nVersion 2.3"
+    "text": "FLYINGGREEN\nYour journey manual.\nVersion 2.3\n\n\n\n\n\n\n\n💬"
   },
   {
     "objectID": "intro.html",
@@ -56,102 +56,109 @@
     "text": "5.1 Functionalities\n\n\n\n\n\nBased on EUROCONTROL data and traffic forecasts, get an estimate of future trip fuel burn and emissions towards 2050 in different operational views and with traffic filtering options. Explore what-if scenarios to inform sustainable strategic decisions. Leverage on what-if scenario tools, exploring how Sustainable Aviation Fuel (SAF) volumes, technological and operational improvements can impact emission reduction potential. See an indication of additional environmental costs from SAF and market-based measures.\nProject Data\n\nSave/Retrieve/Delete Project\nEmissions estimate\n\n\nSelect the Area and Level of interest\n\nView the Emissions (totals, average and reference)\n\nView the Fuel Burn and Flights number\n\nView the Cumulative Emissions\n\nView the KPIs or results per category\n\nView the Environmental Costs\n\nSelect the Flight criteria Filters\n\nSelect the Aviation Outlook Scenario\n\nWhat-if estimates\n\n\nCustomise the SAF Blend\n\nCustomise the Fleet, Air Traffic Management and Economic Prices"
   },
   {
+    "objectID": "netzero/index.html#feedback-survey",
+    "href": "netzero/index.html#feedback-survey",
+    "title": "5  NetZero",
+    "section": "5.2 Feedback Survey",
+    "text": "5.2 Feedback Survey\nPlease fill in the survey below:"
+  },
+  {
     "objectID": "netzero/index.html#save-retrieve-delete-project-data",
     "href": "netzero/index.html#save-retrieve-delete-project-data",
     "title": "5  NetZero",
-    "section": "5.2 Save, Retrieve, Delete Project data",
-    "text": "5.2 Save, Retrieve, Delete Project data\nNote: You need to log in to enable project data management.\n\nDisplay the projects list\n\nOpen the Project(s) dropdown.\nThe list of available projects appears (e.g., MyFirstProject, MySecondProject, New Project).\n\nCreate a new project and save data\n\nIn the Project(s) dropdown, choose New Project.\nIn the New Project field, enter the project name (e.g., My New Project Name).\nReview the Net Zero information shown on the page.\nClick Save to create the project and store the displayed Net Zero information.\n\nUpdate data in the current project\n\nEnsure the desired project is selected in Project(s) (e.g., MyFirstProject).\nMake your changes on the page.\nClick Save to update the current project with the new information.\n\nRetrieve project data\n\nOpen the Project(s) dropdown.\nSelect the project you want to load (e.g., MyFirstProject, MySecondProject, or My New Project Name).\nThe stored data for that project will be retrieved and displayed.\n\nDelete a project\n\nOpen the Project(s) dropdown and locate the project to remove.\nClick the delete (trash/bin) icon next to that project.\nIn the confirmation dialog, click Confirm to permanently delete the project (or Cancel to keep it)."
+    "section": "5.3 Save, Retrieve, Delete Project data",
+    "text": "5.3 Save, Retrieve, Delete Project data\nNote: You need to log in to enable project data management.\n\nDisplay the projects list\n\nOpen the Project(s) dropdown.\nThe list of available projects appears (e.g., MyFirstProject, MySecondProject, New Project).\n\nCreate a new project and save data\n\nIn the Project(s) dropdown, choose New Project.\nIn the New Project field, enter the project name (e.g., My New Project Name).\nReview the Net Zero information shown on the page.\nClick Save to create the project and store the displayed Net Zero information.\n\nUpdate data in the current project\n\nEnsure the desired project is selected in Project(s) (e.g., MyFirstProject).\nMake your changes on the page.\nClick Save to update the current project with the new information.\n\nRetrieve project data\n\nOpen the Project(s) dropdown.\nSelect the project you want to load (e.g., MyFirstProject, MySecondProject, or My New Project Name).\nThe stored data for that project will be retrieved and displayed.\n\nDelete a project\n\nOpen the Project(s) dropdown and locate the project to remove.\nClick the delete (trash/bin) icon next to that project.\nIn the confirmation dialog, click Confirm to permanently delete the project (or Cancel to keep it)."
   },
   {
     "objectID": "netzero/index.html#select-area-of-interest",
     "href": "netzero/index.html#select-area-of-interest",
     "title": "5  NetZero",
-    "section": "5.3 Select Area of interest",
-    "text": "5.3 Select Area of interest\nYou can analyze results at different levels. First pick a Level, then pick the corresponding Area.\n\nSelect the Level\n\nOpen the Level dropdown. Choose one of:\nNetwork\nState\nFAB\nAirport\n\n\n(After you choose a level, the Area dropdown will adapt to that level.)\n\nSelect the Area / State / FAB / ANSP / Airport\n\nOpen the Area dropdown.\nPick the item that matches your chosen level:\n\nNetwork → choose a region (e.g., ECAC, EUROCONTROL, EU27+EFTA, EEA, RP3, EU27).\nState → choose a country (e.g., Belgium).\nFAB → choose a Functional Airspace Block (e.g., FABEC).\nAirport → choose an airport (e.g., Brussels).\n\nThe map panel updates to your selection.\n\n\nWhat to do next\n\nClick Area focus to view metrics for the selected area (you’ll see panels such as Fuel burn and others update accordingly).\nOr click Full trajectory if you want trajectory-based views (when available).\n\nNotes & tips\n\n“Please select your area of interest to determine the filters”, filters become available after you pick a Level + Area.\nFor Airport level, select a source to display airport emissions (e.g., LTO, TMA) when prompted.\n\nDefault values\n\nLevel value is Network\nArea value is ECAC\nState value is Belgium\nFAB value is FABEC\nANSP value is Skeyes\nAirport value is Brussels\n\n\nOutput\nThe Level and Area selection update the Emissions, Fuel burn, Cumulative Emissions and What-if Graphs.\nData\nUN list of countries. The designations employed do not imply the expression of any opinion whatsoever on the part of EUROCONTROL concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Generally, Airports with, on average, more than 10 movements per day are included.\nDefinition\nNetwork: group of states State: nation or territory considered as an organized political community under one government FAB (Functional Airspace Block): an airspace block based on operational requirements and established regardless of State boundaries."
+    "section": "5.4 Select Area of interest",
+    "text": "5.4 Select Area of interest\nYou can analyze results at different levels. First pick a Level, then pick the corresponding Area.\n\nSelect the Level\n\nOpen the Level dropdown. Choose one of:\nNetwork\nState\nFAB\nAirport\n\n\n(After you choose a level, the Area dropdown will adapt to that level.)\n\nSelect the Area / State / FAB / ANSP / Airport\n\nOpen the Area dropdown.\nPick the item that matches your chosen level:\n\nNetwork → choose a region (e.g., ECAC, EUROCONTROL, EU27+EFTA, EEA, RP3, EU27).\nState → choose a country (e.g., Belgium).\nFAB → choose a Functional Airspace Block (e.g., FABEC).\nAirport → choose an airport (e.g., Brussels).\n\nThe map panel updates to your selection.\n\n\nWhat to do next\n\nClick Area focus to view metrics for the selected area (you’ll see panels such as Fuel burn and others update accordingly).\nOr click Full trajectory if you want trajectory-based views (when available).\n\nNotes & tips\n\n“Please select your area of interest to determine the filters”, filters become available after you pick a Level + Area.\nFor Airport level, select a source to display airport emissions (e.g., LTO, TMA) when prompted.\n\nDefault values\n\nLevel value is Network\nArea value is ECAC\nState value is Belgium\nFAB value is FABEC\nANSP value is Skeyes\nAirport value is Brussels\n\n\nOutput\nThe Level and Area selection update the Emissions, Fuel burn, Cumulative Emissions and What-if Graphs.\nData\nUN list of countries. The designations employed do not imply the expression of any opinion whatsoever on the part of EUROCONTROL concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Generally, Airports with, on average, more than 10 movements per day are included.\nDefinition\nNetwork: group of states State: nation or territory considered as an organized political community under one government FAB (Functional Airspace Block): an airspace block based on operational requirements and established regardless of State boundaries."
   },
   {
     "objectID": "netzero/index.html#view-the-emissions-totals-average-and-reference",
     "href": "netzero/index.html#view-the-emissions-totals-average-and-reference",
     "title": "5  NetZero",
-    "section": "5.4 View the Emissions (totals, average and reference)",
-    "text": "5.4 View the Emissions (totals, average and reference)\n\n\n\n\n\nDefault\n\nvalues CO2 exhaust, CO2 net, SAF, Fleet Renewal, Fleet Revolution, Operation Improvements, NOx, SOx\nEmissions View Total\n\nOutput\nThe Emissions results vary depending on the Zone selected, the Filters and the What if values. The total emissions of one year, and the reduction potential of in-sector improvements are visible at the top of the graph.\n\n\n\n\n\nData\nTotal value presents absolute total values of emissions Average values present values per flight Relative values present the yearly relative change compared to the reference year (currently 2024)\nDefinition\nTotal value presents absolute total values of emissions\nAverage values present values per flight\nRelative values present the yearly relative change compared to the reference year (currently 2024)"
+    "section": "5.5 View the Emissions (totals, average and reference)",
+    "text": "5.5 View the Emissions (totals, average and reference)\n\n\n\n\n\nDefault\n\nvalues CO2 exhaust, CO2 net, SAF, Fleet Renewal, Fleet Revolution, Operation Improvements, NOx, SOx\nEmissions View Total\n\nOutput\nThe Emissions results vary depending on the Zone selected, the Filters and the What if values. The total emissions of one year, and the reduction potential of in-sector improvements are visible at the top of the graph.\n\n\n\n\n\nData\nTotal value presents absolute total values of emissions Average values present values per flight Relative values present the yearly relative change compared to the reference year (currently 2024)\nDefinition\nTotal value presents absolute total values of emissions\nAverage values present values per flight\nRelative values present the yearly relative change compared to the reference year (currently 2024)"
   },
   {
     "objectID": "netzero/index.html#view-the-fuel-burn-number-of-flights",
     "href": "netzero/index.html#view-the-fuel-burn-number-of-flights",
     "title": "5  NetZero",
-    "section": "5.5 View the Fuel Burn & Number of Flights",
-    "text": "5.5 View the Fuel Burn & Number of Flights\nDefault\nDefault values Fossil, SAF, e-H2 and Number of flights \nOutput\nThe Fuel Burn results vary depending on the Zone selected, the Filtersand the What if simulation. The Fuel Burn of one year is visible atthe top of the graph. The graph shows total fuel burn and averagefuel burn per flight. The H2 and electricity energy is based on thepercentage of fleet revolution chosen.​\n\n\n\n\n\nData\nFuel burn historical values are calculated for each flight using theEUROCONTROL Advanced Emission Model (AEM) based on latestaircraft/engine fuel burn and emission models with BADA3.16.Estimated Fuel burn values towards 2050 are based on actualtrajectories of reference year (usually the last full year) and trafficgrowth rates as published by STATFOR.​"
+    "section": "5.6 View the Fuel Burn & Number of Flights",
+    "text": "5.6 View the Fuel Burn & Number of Flights\nDefault\nDefault values Fossil, SAF, e-H2 and Number of flights \nOutput\nThe Fuel Burn results vary depending on the Zone selected, the Filtersand the What if simulation. The Fuel Burn of one year is visible atthe top of the graph. The graph shows total fuel burn and averagefuel burn per flight. The H2 and electricity energy is based on thepercentage of fleet revolution chosen.​\n\n\n\n\n\nData\nFuel burn historical values are calculated for each flight using theEUROCONTROL Advanced Emission Model (AEM) based on latestaircraft/engine fuel burn and emission models with BADA3.16.Estimated Fuel burn values towards 2050 are based on actualtrajectories of reference year (usually the last full year) and trafficgrowth rates as published by STATFOR.​"
   },
   {
     "objectID": "netzero/index.html#view-the-cumulative-emissions",
     "href": "netzero/index.html#view-the-cumulative-emissions",
     "title": "5  NetZero",
-    "section": "5.6 View the cumulative emissions",
-    "text": "5.6 View the cumulative emissions\n\n\n\n\n\nDefault\nDefault values CO2 exhaust and CO2 net\nOutput\nThe Cumulative Emissions results vary depending on the Zoneselected, the Filters and the What if simulation. The CumulativeEmissions of one year is visible by travelling on top of the graph.\nData\nThe yearly results from the main graph are added to indicate thecumulative emission results for CO2 (as CO2 remains in theatmosphere for many decades).​"
+    "section": "5.7 View the cumulative emissions",
+    "text": "5.7 View the cumulative emissions\n\n\n\n\n\nDefault\nDefault values CO2 exhaust and CO2 net\nOutput\nThe Cumulative Emissions results vary depending on the Zoneselected, the Filters and the What if simulation. The CumulativeEmissions of one year is visible by travelling on top of the graph.\nData\nThe yearly results from the main graph are added to indicate thecumulative emission results for CO2 (as CO2 remains in theatmosphere for many decades).​"
   },
   {
     "objectID": "netzero/index.html#view-the-what-if-results",
     "href": "netzero/index.html#view-the-what-if-results",
     "title": "5  NetZero",
-    "section": "5.7 View the what-if results",
-    "text": "5.7 View the what-if results"
+    "section": "5.8 View the what-if results",
+    "text": "5.8 View the what-if results"
   },
   {
     "objectID": "netzero/index.html#view-the-environmental-management-status",
     "href": "netzero/index.html#view-the-environmental-management-status",
     "title": "5  NetZero",
-    "section": "5.8 View the Environmental Management status",
-    "text": "5.8 View the Environmental Management status\n\nDefault\nIn the ANSP and Airport views, instead of the cost graphs an overviewis presented on the EMS status of ANSP and airports​\nOutput\nIndication of the Environmental Systems that are applied at the ANSPand different national Airports.\nData\nANSP​\nSeveral Environmental Systems may be applied at ANSP level, such as EMAS,GreenATM, ISO 14000 family, etc.​\nThe CANSO GreenATM programme is a voluntary environmental accreditationdesigned for ANSPs to assess and enhance their environmental performance. Itoffers a structured framework with five maturity levels, evaluating areas such asgovernance, operational efficiency, infrastructure, and stakeholder engagement.​\nParticipation in the GreenATM programme is entirely voluntary for ANSPs. Itserves as an independent, industry-endorsed accreditation of theirenvironmental efforts.​"
+    "section": "5.9 View the Environmental Management status",
+    "text": "5.9 View the Environmental Management status\n\nDefault\nIn the ANSP and Airport views, instead of the cost graphs an overviewis presented on the EMS status of ANSP and airports​\nOutput\nIndication of the Environmental Systems that are applied at the ANSPand different national Airports.\nData\nANSP​\nSeveral Environmental Systems may be applied at ANSP level, such as EMAS,GreenATM, ISO 14000 family, etc.​\nThe CANSO GreenATM programme is a voluntary environmental accreditationdesigned for ANSPs to assess and enhance their environmental performance. Itoffers a structured framework with five maturity levels, evaluating areas such asgovernance, operational efficiency, infrastructure, and stakeholder engagement.​\nParticipation in the GreenATM programme is entirely voluntary for ANSPs. Itserves as an independent, industry-endorsed accreditation of theirenvironmental efforts.​"
   },
   {
     "objectID": "netzero/index.html#view-the-environmental-costs",
     "href": "netzero/index.html#view-the-environmental-costs",
     "title": "5  NetZero",
-    "section": "5.9 View the Environmental Costs",
-    "text": "5.9 View the Environmental Costs\n\n\n\n\n\nDefault \nDefault values EU ETS and Total view\nOutput\nThe Environmental costs vary depending on the Zone selected andthe What if simulation. The Environmental cost are visible for 3 years:\n2030, 2040 and 2050.​\nData\nData to calculate additional environmental costs are synchronized withassumptions from Eurocontrol Aviation Outlook 2050 (see below).​\nEU ETS cost are assumed to offset the total remaining net emissions,both taking into consideration LCA values (option EU ETS), and nottaking into consideration SAF lifecycle values (the option with SAFexcluded). ​\nSimplified CORSIA costs only appear if emission values for eligibleflights are higher than 85% of 2019 emissions and then takingCORSIA sectoral growth factors into consideration (linear progressionfrom zero towards SGF 2,6 in 2050). Only sectoral offsetmethodologies are included to avoid too high calculation complexities.​"
+    "section": "5.10 View the Environmental Costs",
+    "text": "5.10 View the Environmental Costs\n\n\n\n\n\nDefault \nDefault values EU ETS and Total view\nOutput\nThe Environmental costs vary depending on the Zone selected andthe What if simulation. The Environmental cost are visible for 3 years:\n2030, 2040 and 2050.​\nData\nData to calculate additional environmental costs are synchronized withassumptions from Eurocontrol Aviation Outlook 2050 (see below).​\nEU ETS cost are assumed to offset the total remaining net emissions,both taking into consideration LCA values (option EU ETS), and nottaking into consideration SAF lifecycle values (the option with SAFexcluded). ​\nSimplified CORSIA costs only appear if emission values for eligibleflights are higher than 85% of 2019 emissions and then takingCORSIA sectoral growth factors into consideration (linear progressionfrom zero towards SGF 2,6 in 2050). Only sectoral offsetmethodologies are included to avoid too high calculation complexities.​"
   },
   {
     "objectID": "netzero/index.html#select-the-flight-criteria-filters",
     "href": "netzero/index.html#select-the-flight-criteria-filters",
     "title": "5  NetZero",
-    "section": "5.10 Select the Flight criteria Filters",
-    "text": "5.10 Select the Flight criteria Filters"
+    "section": "5.11 Select the Flight criteria Filters",
+    "text": "5.11 Select the Flight criteria Filters"
   },
   {
     "objectID": "netzero/index.html#select-the-aviation-outlook-scenario",
     "href": "netzero/index.html#select-the-aviation-outlook-scenario",
     "title": "5  NetZero",
-    "section": "5.11 Select the Aviation Outlook Scenario",
-    "text": "5.11 Select the Aviation Outlook Scenario"
+    "section": "5.12 Select the Aviation Outlook Scenario",
+    "text": "5.12 Select the Aviation Outlook Scenario"
   },
   {
     "objectID": "netzero/index.html#customise-the-saf-blend",
     "href": "netzero/index.html#customise-the-saf-blend",
     "title": "5  NetZero",
-    "section": "5.12 Customise the SAF Blend",
-    "text": "5.12 Customise the SAF Blend"
+    "section": "5.13 Customise the SAF Blend",
+    "text": "5.13 Customise the SAF Blend"
   },
   {
     "objectID": "netzero/index.html#customise-the-fleet-air-traffic-management-and-economic-prices",
     "href": "netzero/index.html#customise-the-fleet-air-traffic-management-and-economic-prices",
     "title": "5  NetZero",
-    "section": "5.13 Customise the Fleet, Air Traffic Management and Economic Prices",
-    "text": "5.13 Customise the Fleet, Air Traffic Management and Economic Prices"
+    "section": "5.14 Customise the Fleet, Air Traffic Management and Economic Prices",
+    "text": "5.14 Customise the Fleet, Air Traffic Management and Economic Prices"
   },
   {
     "objectID": "netzero/index.html#see-the-impact-of-operational-improvements",
     "href": "netzero/index.html#see-the-impact-of-operational-improvements",
     "title": "5  NetZero",
-    "section": "5.14 See the impact of operational improvements",
-    "text": "5.14 See the impact of operational improvements"
+    "section": "5.15 See the impact of operational improvements",
+    "text": "5.15 See the impact of operational improvements"
   },
   {
     "objectID": "netzero/index.html#netzero-journey",
     "href": "netzero/index.html#netzero-journey",
     "title": "5  NetZero",
-    "section": "5.15 NetZero journey",
-    "text": "5.15 NetZero journey"
+    "section": "5.16 NetZero journey",
+    "text": "5.16 NetZero journey"
   },
   {
     "objectID": "fuelingdecarb/index.html#gateway-to-informed-green-energy-choices",
