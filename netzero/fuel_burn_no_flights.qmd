@@ -1,13 +1,16 @@
-Default
+------------------------------------------------------------------------
+**Default**
 
 Default values Fossil, SAF, e-H2 and Number of flights 
 
-Output
+------------------------------------------------------------------------
+**Output**
 
 The Fuel Burn results vary depending on the Zone selected, the Filtersand the What if simulation. The Fuel Burn of one year is visible atthe top of the graph. The graph shows total fuel burn and averagefuel burn per flight. The H2 and electricity energy is based on thepercentage of fleet revolution chosen.​
 
 ![](/www/fuel_burn_no_flights_graph.png){fig-align="center"}
 
-Data
+------------------------------------------------------------------------
+**Data**
 
 Fuel burn historical values are calculated for each flight using theEUROCONTROL Advanced Emission Model (AEM) based on latestaircraft/engine fuel burn and emission models with BADA3.16.Estimated Fuel burn values towards 2050 are based on actualtrajectories of reference year (usually the last full year) and trafficgrowth rates as published by STATFOR.​

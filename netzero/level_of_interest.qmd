@@ -24,13 +24,17 @@ What to do next
 
 -   Or click Full trajectory if you want trajectory-based views (when available).
 
-Notes & tips
+------------------------------------------------------------------------
+
+**Notes & tips**
 
 -   “Please select your area of interest to determine the filters”, filters become available after you pick a Level + Area.
 
 -   For Airport level, select a source to display airport emissions (e.g., LTO, TMA) when prompted.
 
-Default values
+------------------------------------------------------------------------
+
+**Default values**
 
 1.  Level value is Network
 
@@ -44,17 +48,23 @@ Default values
 
 6.  Airport value is Brussels
 
-![](images/clipboard-1061742285.png)
+![](images/clipboard-1061742285.png)\]
 
-Output
+------------------------------------------------------------------------
+
+**Output**
 
 The Level and Area selection update the Emissions, Fuel burn, Cumulative Emissions and What-if Graphs.
 
-Data
+------------------------------------------------------------------------
+
+**Data**
 
 UN list of countries. The designations employed do not imply the expression of any opinion whatsoever on the part of EUROCONTROL concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Generally, Airports with, on average, more than 10 movements per![](images/clipboard-1061742285.png) day are included.
 
-Definition
+------------------------------------------------------------------------
+
+**Definition**
 
 Network: group of states State: nation or territory considered as an organized political community under one government FAB (Functional Airspace Block): an airspace block based on operational requirements and established regardless of State boundaries.
 

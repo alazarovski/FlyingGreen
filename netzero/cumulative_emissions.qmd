@@ -1,13 +1,16 @@
 ![](/www/cum_emissions.png){fig-align="center" width="300"}
 
-Default
+------------------------------------------------------------------------
+**Default**
 
 Default values CO2 exhaust and CO2 net
 
-Output
+------------------------------------------------------------------------
+**Output**
 
 The Cumulative Emissions results vary depending on the Zoneselected, the Filters and the What if simulation. The CumulativeEmissions of one year is visible by travelling on top of the graph.
 
-Data
+------------------------------------------------------------------------
+**Data**
 
 The yearly results from the main graph are added to indicate thecumulative emission results for CO2 (as CO2 remains in theatmosphere for many decades).​

@@ -38,12 +38,25 @@
 
 ## Select the Flight criteria Filters
 
-## Select the Aviation Outlook Scenario
+{{< include flight_criteria_filters.qmd >}}
+
+## Select the Aviation Outlook
+
+{{< include aviation_outlook.qmd >}}
 
 ## Customise the SAF Blend
 
+{{< include custom_saf_blend.qmd >}}
+
 ## Customise the Fleet, Air Traffic Management and Economic Prices
+
+{{< include customize_fleet.qmd >}}
 
 ## See the impact of operational improvements
 
+{{< include op_improvements.qmd >}}
+
 ## NetZero journey
+
+{{< include net_zero_journey.qmd >}}
+
