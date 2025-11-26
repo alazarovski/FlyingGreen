@@ -6,6 +6,7 @@ Version 2.3
 
 ![](www/fg_logo.png){fig-align="center"}
 
+```{=html}
 <style>
 /* Floating Chatbot button and iframe */
 #chatbase-widget {
@@ -37,14 +38,19 @@ Version 2.3
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 </style>
+```
 
-<button id="chatbase-button">💬</button>
+<button id="chatbase-button">
 
-<iframe
-  id="chatbase-widget"
-  src="https://www.chatbase.co/chatbot-iframe/lfoIwoYxa01_q3kTlkn0y"
-></iframe>
+💬
 
+</button>
+
+<iframe id="chatbase-widget" src="https://www.chatbase.co/chatbot-iframe/lfoIwoYxa01_q3kTlkn0y">
+
+</iframe>
+
+```{=html}
 <script>
 const btn = document.getElementById('chatbase-button');
 const chat = document.getElementById('chatbase-widget');
@@ -57,3 +63,4 @@ btn.addEventListener('click', () => {
   }
 });
 </script>
+```

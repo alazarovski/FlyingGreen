@@ -1,13 +1,19 @@
-![](/www/cum_emissions.png){fig-align="center" width="300"}
+------------------------------------------------------------------------
 
-Default
+![](images/cum_emissions.png){fig-align="center"}
 
-Default values CO2 exhaust and CO2 net
+**Default**
 
-Output
+*Default values:* CO2 exhaust and CO2 net
 
-The Cumulative Emissions results vary depending on the Zoneselected, the Filters and the What if simulation. The CumulativeEmissions of one year is visible by travelling on top of the graph.
+------------------------------------------------------------------------
 
-Data
+**Output**
 
-The yearly results from the main graph are added to indicate thecumulative emission results for CO2 (as CO2 remains in theatmosphere for many decades).​
+The Cumulative Emissions results vary depending on the Zoneselected, the Filters and the What if simulation. The Cumulative Emissions of one year is visible by travelling on top of the graph.
+
+------------------------------------------------------------------------
+
+**Data**
+
+The yearly results from the main graph are added to indicate the cumulative emission results for CO2 (as CO2 remains in the atmosphere for many decades).​

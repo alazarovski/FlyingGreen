@@ -4,7 +4,7 @@ project:
 book:
   title: "FlyingGreen User Manual"
   author: "EUROCONTROL/ASU"
-  date: "02/09/2025"
+  date: "`r Sys.Date()`"
 
   chapters:
     - index.qmd
@@ -16,7 +16,6 @@ book:
     - fuelingdecarb/index.qmd
     - climadapt/index.qmd
     - decarbfin/index.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -24,7 +23,7 @@ bibliography: references.bib
 format:
   html:
     theme:
-      light: cosmo
+      light: minty
       dark: darkly
     number-sections: true
     number-depth: 2

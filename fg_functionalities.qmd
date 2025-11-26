@@ -20,7 +20,7 @@
 
 -   Environmental costs bar chart including impact on ticket price and demand (assuming a -0.1-elasticity value which will be updated in a next release to reflect better values per market segments)
 
-## FuelingDecarb
+## FuellingDecarb
 
 -   Estimation tool covers 2025, 2035 & 2045 in addition to existing 2030, 2040 & 2050.
 
