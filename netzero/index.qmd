@@ -59,3 +59,7 @@
 ## NetZero journey
 
 {{< include net_zero_journey.qmd >}}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0c5489e7c3ffb5f1e432003aa1a46c3d0dc9706d

@@ -1,4 +1,5 @@
 C:/Users/fdfilipp/Documents/FlyingGreen/_quarto.yml="5F10217F"
+<<<<<<< HEAD
 C:/Users/fdfilipp/Documents/FlyingGreen/climadapt/climadapt_data.qmd="CD325F66"
 C:/Users/fdfilipp/Documents/FlyingGreen/climadapt/climadapt_journey.qmd="042AA4C9"
 C:/Users/fdfilipp/Documents/FlyingGreen/climadapt/climate_change_effects.qmd="ACD9E745"
@@ -14,6 +15,10 @@ C:/Users/fdfilipp/Documents/FlyingGreen/climadapt/run_climate_change.qmd="6ADC84
 C:/Users/fdfilipp/Documents/FlyingGreen/climadapt/search_climate.qmd="374193D3"
 C:/Users/fdfilipp/Documents/FlyingGreen/decarbfin/index.qmd="9634F17C"
 C:/Users/fdfilipp/Documents/FlyingGreen/decarbfin/intro.qmd="2247FB73"
+=======
+C:/Users/fdfilipp/Documents/FlyingGreen/climadapt/functionalities.qmd="3BA6E301"
+C:/Users/fdfilipp/Documents/FlyingGreen/climadapt/index.qmd="167B14AA"
+>>>>>>> 0c5489e7c3ffb5f1e432003aa1a46c3d0dc9706d
 C:/Users/fdfilipp/Documents/FlyingGreen/fg_in_brief.qmd="B29C39D6"
 C:/Users/fdfilipp/Documents/FlyingGreen/fuelingdecarb/index.qmd="2D5FD6CD"
 C:/Users/fdfilipp/Documents/FlyingGreen/fuelingdecarb/intro.qmd="00140546"
@@ -36,6 +41,11 @@ C:/Users/fdfilipp/Documents/FlyingGreen/netzero/net_zero_journey.qmd="CAF85107"
 C:/Users/fdfilipp/Documents/FlyingGreen/netzero/op_improvements.qmd="023C70B2"
 C:/Users/fdfilipp/Documents/FlyingGreen/netzero/save_retrieve_delete_project_data.qmd="1DB6F045"
 C:/Users/fdfilipp/Documents/FlyingGreen/netzero/view_env_costs.qmd="52F51F87"
+<<<<<<< HEAD
 C:/Users/fdfilipp/Documents/FlyingGreen/summary.qmd="0AA23753"
 C:/Users/fdfilipp/dev/packrat/resources/init-rprofile.R="D6EC0D0E"
 C:/Users/fdfilipp/dev/packrat/resources/init.R="F5C74DBD"
+=======
+C:/Users/fdfilipp/Documents/FlyingGreen/netzero/what_if_results.qmd="6C48A475"
+C:/Users/fdfilipp/Documents/FlyingGreen/summary.qmd="0AA23753"
+>>>>>>> 0c5489e7c3ffb5f1e432003aa1a46c3d0dc9706d
