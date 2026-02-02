@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVENIR Pillar 2 Catalogue</title>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    :root {
+      --primary: #009F6E; --primary-dark: #075E54; --accent: #009F6E;
+      --ink: #212121; --paper: #FCFCFC;
+      --bg-gradient-start: #FCFCFC; --bg-gradient-end: #EAF4FF;
+      --border: rgba(0,0,0,0.08);
+      --text-primary: #212121; --text-secondary: #455A64; --text-inverse: #FFFFFF;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{font-family:'Exo', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:linear-gradient(135deg,var(--bg-gradient-start),var(--bg-gradient-end));color:var(--text-primary);min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden}
+    body::before{content:'';position:fixed;top:-20%;left:-10%;width:700px;height:700px;background:radial-gradient(circle,rgba(0,159,110,.12) 0%,transparent 65%);filter:blur(60px);z-index:-1;pointer-events:none}
+
+    .topbar{position:sticky;top:0;z-index:1000;background:rgba(252,252,252,0.85);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--border)}
+    .topbar-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:12px 16px}
+    .brand{color:var(--ink);text-decoration:none;font-weight:800;letter-spacing:.2px}
+    .brand:hover{color:var(--primary-dark)}
+    .menu-toggle{margin-left:auto;font-size:1.6rem;line-height:1;background:transparent;color:var(--ink);border:0;cursor:pointer;padding:4px 8px}
+    .menu-toggle:focus{outline:2px solid var(--primary);outline-offset:2px;border-radius:6px}
+    nav.primary .menu{list-style:none;display:none;flex-direction:column;gap:0;width:100%;margin-top:8px}
+    nav.primary .menu.open{display:flex}
+    nav.primary .menu a{display:block;color:var(--ink);text-decoration:none;padding:10px 12px;border-radius:8px}
+    nav.primary .menu a:hover,nav.primary .menu a:focus{background:rgba(41,144,234,0.12);outline:none}
+    nav.primary .menu li.active>a,nav.primary .menu a[aria-current="page"]{background:rgba(0,159,110,0.12);font-weight:600}
+    @media(min-width:768px){.menu-toggle{display:none}.topbar-inner{display:grid;grid-template-columns:auto 1fr;align-items:center}nav.primary{justify-self:end}nav.primary .menu{display:flex!important;flex-direction:row;align-items:center;gap:8px;margin-top:0}nav.primary .menu a{padding:8px 10px}}
+
+    header{text-align:center;padding:48px 24px 16px}
+    h1{font-size:clamp(2rem,6vw,3.25rem);font-weight:800;letter-spacing:-.02em;margin-bottom:8px;color:#075E54}
+
+    .grid{max-width:1200px;margin:0 auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(1fr,1fr));gap:20px;width:100%}
+
+    /* Card with background image + overlay */
+    .card{position:relative;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;background-size:cover;background-position:center}
+    .card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 70%)}
+    .card > *{position:relative;z-index:1}
+
+    .card h2{color:#fff;font-size:1.25rem;margin:0 0 8px 0;font-weight:800;text-shadow:0 2px 8px rgba(0,0,0,.45)}
+    .card p{color:#f0f7f5;font-size:.98rem;line-height:1.6;margin:0 0 14px 0;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;color:var(--text-inverse);background:#009F6E;padding:12px 18px;border-radius:999px;font-weight:700;transition:background .2s ease, transform .05s ease}
+    .btn:hover{background:#075E54} .btn:active{transform:scale(.98)}
+
+    /* Non-interactive per-card tag pills */
+    .tagbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+    .tagbar .chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.35);background:rgba(255,255,255,0.18);color:#fff;font-size:.85rem;backdrop-filter:blur(4px);cursor:default;user-select:text}
+    .tagbar .chip .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.85)}
+
+    /* Usage badge */
+    .badge.level-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 6px;font-size:11px;border-radius:999px;border:1px solid rgba(255,255,255,0.45);background:rgba(255,255,255,0.22);color:#fff;font-weight:600;white-space:nowrap;position:absolute;top:12px;right:12px;z-index:1}
+
+    .card img{display:none}
+
+    footer{text-align:center;padding:40px 20px;color:#607D8B;font-size:.9rem}
+    .skip-link{position:absolute;left:-999px;top:0;background:var(--paper);color:var(--ink);padding:8px 12px;border-radius:4px}
+    .skip-link:focus{left:8px;outline:2px solid #009F6E}
+
+    /* Filters (as in original) */
+    .filter-panel{max-width:1200px;margin:0 auto 6px;padding:8px 20px 0}
+    .filter-tabs{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .filter-tabs .tab{font-family:'Exo';display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;background:#fff;color:var(--ink);cursor:pointer;font-weight:800}
+    .filter-tabs .tab[aria-selected="true"], .filter-tabs .tab:hover{background:rgba(41,144,234,.12)}
+    .filter-tabs .tab .count{background:rgba(0,159,110,.18);color:#075E54;border:1px solid rgba(0,159,110,.35);padding:2px 8px;border-radius:999px;font-size:.78rem;font-weight:700}
+    .filter-tabs .clear{font-family:'Exo';margin-left:auto;display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;background:rgba(41,144,234,.10);border:1px solid var(--border);color:var(--ink);cursor:pointer}
+
+    .filter-group{background:rgba(255,255,255,0.85);backdrop-filter:saturate(140%) blur(10px);border:1px solid var(--border);border-radius:12px;padding:10px;margin:8px 0 0}
+    .filter-group[hidden]{display:none}
+    .filter-group .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{font-family:'Exo';background:rgba(41,144,234,.10);color:var(--ink);border:1px solid var(--border);padding:6px 10px;border-radius:999px;cursor:pointer;font-size:.85rem}
+    .chip.active{background:rgba(0,159,110,.18);border-color:rgba(0,159,110,.35)}
+
+    .active-summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-height:36px;padding:8px 0;color:var(--text-secondary)}
+    .active-summary .chip{background:rgba(0,159,110,.18);border:1px solid var(--border)}
+
+    .hidden{display:none !important}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Homepage">AVENIR Catalogue</a>
+      <button id="menu-toggle" class="menu-toggle" aria-controls="menu-list" aria-expanded="false" aria-label="Open menu">☰</button>
+      <nav class="primary" aria-label="Primary navigation">
+        <ul id="menu-list" class="menu">
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="dashboard.html">Dashboards</a></li>
+          <li class="active"><a href="use-cases.html" aria-current="page">Use Cases</a></li>
+          <li><a href="questionnaires.html">Questionnaires</a></li>
+          <li><a href="#questions">Downloads</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <header>
+    <h1 id="main-content">Use Cases</h1>
+  </header>
+
+  <!-- Filter panel -->
+  <section class="filter-panel" id="filters" aria-label="Dashboard filters">
+    <div class="filter-tabs" role="tablist">
+      <button class="tab" role="tab" aria-controls="group-focus" aria-selected="false" data-target="focus">
+        <i class="ph ph-target" aria-hidden="true"></i> Focus areas <span class="count" aria-hidden="true">0</span>
+      </button>
+      <button class="tab" role="tab" aria-controls="group-phase" aria-selected="false" data-target="phase">
+        <i class="ph ph-airplane-takeoff" aria-hidden="true"></i> Flight phases <span class="count" aria-hidden="true">0</span>
+      </button>
+      <button class="tab" role="tab" aria-controls="group-metric" aria-selected="false" data-target="metric">
+        <i class="ph ph-chart-line-up" aria-hidden="true"></i> Indicators & metrics <span class="count" aria-hidden="true">0</span>
+      </button>
+      <button class="tab" role="tab" aria-controls="group-usage" aria-selected="false" data-target="usage">
+        <i class="ph ph-user-switch" aria-hidden="true"></i> Usage level <span class="count" aria-hidden="true">0</span>
+      </button>
+      <div class="spacer"></div>
+      <button id="clear-all" class="clear" title="Clear all filters"><i class="ph ph-broom" aria-hidden="true"></i> Clear</button>
+    </div>
+
+    <!-- Focus -->
+    <div class="filter-group" id="group-focus" role="region" aria-labelledby="tab-focus" hidden>
+      <div class="chips" data-group="focus">
+        <button class="chip chip-n" data-group="focus" data-tag="CO₂">CO₂</button>
+        <button class="chip chip-n" data-group="focus" data-tag="Non‑CO₂">Non‑CO₂</button>
+        <button class="chip chip-n" data-group="focus" data-tag="Noise">Noise</button>
+        <button class="chip chip-n" data-group="focus" data-tag="LAQ">LAQ</button>
+      </div>
+    </div>
+
+    <!-- Phase -->
+    <div class="filter-group" id="group-phase" role="region" aria-labelledby="tab-phase" hidden>
+      <div class="chips" data-group="phase">
+        <button class="chip chip-n" data-group="phase" data-tag="Taxi‑out">Taxi‑out</button>
+        <button class="chip chip-n" data-group="phase" data-tag="Departure/Climb">Departure/Climb</button>
+        <button class="chip chip-n" data-group="phase" data-tag="Cruise">Cruise</button>
+        <button class="chip chip-n" data-group="phase" data-tag="Descent/Arrival">Descent/Arrival</button>
+        <button class="chip chip-n" data-group="phase" data-tag="Taxi‑in">Taxi‑in</button>
+        <button class="chip chip-n" data-group="phase" data-tag="Wheels‑up/‑down">Wheels‑up/‑down</button>
+        <button class="chip chip-n" data-group="phase" data-tag="Gate‑to‑Gate">Gate‑to‑Gate</button>
+      </div>
+    </div>
+
+    <!-- Metric -->
+    <div class="filter-group" id="group-metric" role="region" aria-labelledby="tab-metric" hidden>
+      <div class="chips" data-group="metric">
+        <button class="chip chip-n" data-group="metric" data-tag="ICAO KPIs">ICAO KPIs</button>
+        <button class="chip chip-n" data-group="metric" data-tag="SES KPIs/PIs">SES KPIs/PIs</button>
+        <button class="chip chip-n" data-group="metric" data-tag="Non‑SES HFE">Non‑SES HFE</button>
+        <button class="chip chip-n" data-group="metric" data-tag="Non‑SES VFE">Non‑SES VFE</button>
+        <button class="chip chip-n" data-group="metric" data-tag="Fuel burn/CO₂">Fuel burn/CO₂</button>
+        <button class="chip chip-n" data-group="metric" data-tag="metric‑Non‑CO₂">Non‑CO₂</button>
+        <button class="chip chip-n" data-group="metric" data-tag="metric‑Noise">Noise</button>
+        <button class="chip chip-n" data-group="metric" data-tag="metric‑LAQ">LAQ</button>
+      </div>
+    </div>
+
+    <div class="filter-group" id="group-usage" role="region" aria-labelledby="tab-usage" hidden>
+      <div class="chips" data-group="usage">
+       <button class="chip chip-n" data-group="usage" data-tag="strategic">Strategic / Management</button>
+       <button class="chip chip-n" data-group="usage" data-tag="tactical">Tactical / Planning</button>
+       <button class="chip chip-n" data-group="usage" data-tag="operational">Operational / Expert</button>
+      </div>
+    </div>
+
+    <div class="active-summary" id="active-summary" aria-live="polite"></div>
+  </section>
+
+  <main class="grid">
+    <!-- Example card; you can duplicate/change attributes and <img> -->
+    <article class="card"
+      data-usage="strategic"
+      data-focus="CO₂"
+      data-phase="Descent/Arrival"
+      data-metric="Non‑SES HFE,Non‑SES VFE,Fuel burn/CO₂">
+      <h2>MUAC – Pre‑flight efficiency optimisation</h2>
+      <img src="figure/muac.png" alt="MUAC - Pre-flight efficiency optimisation">
+      <p>The Pre‑Flight Check (PFC) initiative, launched by the Maastricht Upper Area Control Centre (MUAC) in 2020, aims to enhance flight efficiency during the pre‑flight phase by filing a trajectory closer to the expected actual flight path.</p>
+      <a class="btn" href="aem-details.html">Details <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      <span class="badge level-badge"><i aria-hidden="true"></i>Strategic / Management</span>
+    </article>
+
+    <!-- Duplicate example -->
+    <article class="card"
+      data-usage="operational"
+      data-focus="Non‑CO₂,Noise"
+      data-phase="Cruise,Departure/Climb"
+      data-metric="ICAO KPIs,metric‑Noise">
+      <h2>Another use case</h2>
+      <img src="figure/muac.png" alt="Placeholder">
+      <p>Example description showing how the layout behaves with other attributes and the same background image.</p>
+      <a class="btn" href="#">Details <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      <span class="badge level-badge"><i aria-hidden="true"></i>Operational / Expert</span>
+    </article>
+
+    <article class="card"
+      data-usage="tactical"
+      data-focus="Non‑CO₂,Noise"
+      data-phase="Cruise,Departure/Climb"
+      data-metric="ICAO KPIs,metric‑Noise">
+      <h2>Another use case</h2>
+      <img src="figure/muac.png" alt="Placeholder">
+      <p>Example description showing how the layout behaves with other attributes and the same background image.</p>
+      <a class="btn" href="#">Details <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      <span class="badge level-badge"><i aria-hidden="true"></i>Tactical / Planning</span>
+    </article>
+  </main>
+
+  <section id="aem-details" class="hidden"></section>
+
+  <footer>
+    <p><strong>Open‑Source Governance: </strong>The Avenir Catalogue is developed as an open‑source, collaborative reference. Its evolution is driven by operational experience, user feedback, and contributions from ANSPs.</p>
+    <p>© 2025 Eurocontrol Sustainability Unit. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Menu toggle
+    const toggle = document.getElementById('menu-toggle');
+    const list = document.getElementById('menu-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+
+    // Promote each card's <img> to CSS background and build NON-interactive tagbar from data-attributes
+    (function(){
+      const cards = Array.from(document.querySelectorAll('main.grid .card'));
+      cards.forEach(card => {
+        // 1) Background image from <img> or data-bg attribute
+        const img = card.querySelector('img');
+        const dataBg = card.getAttribute('data-bg');
+        const src = img?.getAttribute('src') || dataBg || '';
+        if (src) { card.style.backgroundImage = `url('${src}')`; }
+
+
+      });
+    })();
+
+    // Filter panel logic (unchanged from original): AND across groups; OR within a group
+    (function(){
+      const panel = document.getElementById('filters'); if(!panel) return;
+      const tabs = Array.from(panel.querySelectorAll('.filter-tabs .tab'));
+      const groups = { focus: document.getElementById('group-focus'), phase: document.getElementById('group-phase'), metric: document.getElementById('group-metric'), usage: document.getElementById('group-usage') };
+      const chips = Array.from(panel.querySelectorAll('.chip-n'));
+      const clearAll = document.getElementById('clear-all');
+      const summary = document.getElementById('active-summary');
+      const state = { focus:new Set(), phase:new Set(), metric:new Set(), usage:new Set() };
+
+      function updateCounts(){ tabs.forEach(t => { const key=t.dataset.target; const node=t.querySelector('.count'); if(node) node.textContent = (state[key]||new Set()).size; }); }
+      function renderSummary(){
+        const frag = document.createDocumentFragment();
+        Object.entries(state).forEach(([group,set])=>{ set.forEach(tag=>{ const b=document.createElement('button'); b.className='chip'; b.textContent=tag; b.title='Remove '+tag+' from '+group; b.addEventListener('click',()=>{ set.delete(tag); sync(); }); frag.appendChild(b); }); });
+        summary.innerHTML=''; if(frag.childNodes.length){ const label=document.createElement('span'); label.textContent='Active:'; summary.appendChild(label); summary.appendChild(frag); }
+      }
+      function filterCards(){
+        const cards = Array.from(document.querySelectorAll('main.grid .card'));
+        const match = (arr,set) => !set.size || arr.some(v=>set.has(v));
+        cards.forEach(card=>{
+          const f=(card.getAttribute('data-focus')||'').split(',').map(s=>s.trim()).filter(Boolean);
+          const p=(card.getAttribute('data-phase')||'').split(',').map(s=>s.trim()).filter(Boolean);
+          const m=(card.getAttribute('data-metric')||'').split(',').map(s=>s.trim()).filter(Boolean);
+          const u=(card.getAttribute('data-usage')||'').split(',').map(s=>s.trim()).filter(Boolean);
+          const visible = match(f,state.focus) && match(p,state.phase) && match(m,state.metric) && match(u,state.usage);
+          card.classList.toggle('hidden', !visible);
+        });
+      }
+      function sync(){ chips.forEach(ch=>ch.classList.toggle('active', state[ch.dataset.group].has(ch.dataset.tag))); updateCounts(); renderSummary(); filterCards(); }
+      tabs.forEach(tab=>tab.addEventListener('click',()=>{ const key=tab.dataset.target; const group=groups[key]; const isOpen = !group.hasAttribute('hidden'); Object.values(groups).forEach(g=>g.setAttribute('hidden','')); if(!isOpen) group.removeAttribute('hidden'); tabs.forEach(t=>t.setAttribute('aria-selected', String(t===tab && !isOpen))); }));
+      chips.forEach(ch=>ch.addEventListener('click',()=>{ const set=state[ch.dataset.group]; if(set.has(ch.dataset.tag)) set.delete(ch.dataset.tag); else set.add(ch.dataset.tag); sync(); }));
+      clearAll?.addEventListener('click',()=>{ Object.values(state).forEach(s=>s.clear()); sync(); });
+      sync();
+    })();
+  </script>
+</body>
+</html>
